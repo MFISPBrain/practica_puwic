@@ -3,14 +3,15 @@
  
 
          <ul >
-                        <li>
-                              <span class="icon is-small is-left">
+              <li>
+                  <span class="icon is-small is-left">
                                 <i class="fas fa-chalkboard"></i>
                                 </span>
-                              <span><a>
-                                Clientes</a>
-                            </span>
-                        </li>
+                     <span><a>
+                                Clientes
+                          </a>
+                    </span>
+              </li>
                         <li > 
                           <span class="icon is-small is-left">
                                 <i class="fas fa-crosshairs"></i>
