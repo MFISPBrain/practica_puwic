@@ -4,7 +4,7 @@
             <img id="img" src="../assets/logotipo-PuWiC.png" >
         </div>
         <div class="field  has-addons has-addons-centered " >
-            <p class="control has-icons-left has-icons-right ">
+            <p class="control has-icons-left has-icons-right mobile">
                 <input class="input " type="text" name="userName" placeholder="Username">
                 <span class="icon is-small is-left" >
 
@@ -13,7 +13,7 @@
             </p>
         </div>
         <div class="field has-addons has-addons-centered " >
-            <div class="control has-icons-left has-icons-right "  >
+            <div class="control has-icons-left has-icons-right mobile"  >
                 <input class="input is-success " type="password" placeholder="Password">
                 <span class="icon is-small is-left " >
                 <i class="fas fa-lock"></i>
@@ -57,6 +57,12 @@ $button-background-color: #008575;
     background: $button-background-color;
     color: $button-color;
     width:20.5rem;
+}
+
+@media screen and (max-width: 370px) {
+    .mobile, #button1 {
+    width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }
 
 $dimensions:  24 32 48 64 96 125 ;
