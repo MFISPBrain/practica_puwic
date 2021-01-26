@@ -1,17 +1,41 @@
 import { createRouter, createWebHistory } from 'vue-router'
-
+import layout from '../layout/layout.vue'
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue')
-  },
-  {
     path: '/login',
+    alias:'/',
     name: 'Login',
     component: () => import(/* webpackChunkName: "login" */ '../views/Login.vue')
-  }
+  },
+  {
+    path: '/Home',
+    name: 'Home',
+    component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue'),
+    meta: {value: 'Home'},
+    children: [
+      {
+        path: '/Tablero',
+        name: 'Tablero',
+        component: layout,
+        meta: {value: 'Tablero'},
+        children: [
+          {
+            path: '',
+            name: '',
+            component: () => import(/* webpackChunkName: "tablero" */ '../views/Tablero/Tablero.vue'),
+          },
+          {
+            path: 'CargarPagos',
+            name: 'CargarPagos',
+            component: () => import(/* webpackChunkName: "pagos" */ '../views/CargarPagos.vue'),
+            meta: {value: 'Cargar Pagos'}
+          }
+        ]
+      },
+      
+    ]
+  },
 ]
 
 const router = createRouter({
