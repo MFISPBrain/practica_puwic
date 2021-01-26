@@ -6,74 +6,74 @@
         <aside>
             <ul class="menu-list">
                 <li>
-                    <a href="" class="texto"> 
+                    <router-link class="texto" to="/Tablero">
                         <span class="icon-text">
                             <span class="icon">
                                 <i class="fas fa-table has-text-black"></i>
                             </span>
                             <span> Tablero</span>
                         </span>
-                    </a>
+                    </router-link>
                 </li>
                 <li>
-                    <a href="" class="texto">
+                    <router-link class="texto" to="">
                         <span class="icon-text">
                             <span class="icon">
                                 <i class="fas fa-map-marked-alt has-text-black"></i>
                             </span>
                             <span> Mapa</span>
                         </span>
-                    </a>
+                    </router-link>
                 </li>
                 <li>
-                    <a href="" class="texto">
+                    <router-link class="texto" to="">
                         <span class="icon-text">
                             <span class="icon">
                                 <i class="fas fa-user-friends has-text-black"></i>
                             </span>
                             <span> Anunciantes</span>
                         </span>
-                    </a>
+                    </router-link>
                 </li>
                 <li>
-                    <a href="" class="texto">
+                    <router-link class="texto" to="">
                         <span class="icon-text">
                             <span class="icon">
                                 <i class="fas fa-bullhorn has-text-black"></i>
                             </span>
                             <span> Anuncios</span>
                         </span>
-                    </a>
+                    </router-link>
                 </li>
                 <li>
-                    <a href="" class="texto">
+                    <router-link class="texto" to="">
                         <span class="icon-text">
                             <span class="icon">
                                 <i class="fas fa-eye has-text-black"></i>
                             </span>
                             <span> Impresiones</span>
                         </span>
-                    </a>
+                    </router-link>
                 </li>
                 <li>
-                    <a href="" class="texto">
+                    <router-link class="texto" to="">
                         <span class="icon-text">
                             <span class="icon">
                                 <i class="fas fa-wifi has-text-black"></i>
                             </span>
                             <span> Puntos WiFi</span>
                         </span>
-                    </a>
+                    </router-link>
                 </li>
                 <li>
-                    <a href="" class="texto">
+                    <router-link class="texto" to="">
                         <span class="icon-text">
                             <span class="icon">
                                 <i class="fas fa-cog has-text-black"></i>
                             </span>
                             <span> Sistema</span>
                         </span>
-                    </a>
+                    </router-link>
                 </li>
             </ul>
         </aside>
