@@ -31,7 +31,8 @@ const routes = [
             component: () => import(/* webpackChunkName: "pagos" */ '../views/CargarPagos.vue'),
             meta: {value: 'Cargar Pagos'}
           }
-        ]
+        ],
+        
       },
       {
         path: '/nuevoUsuario',
@@ -39,10 +40,16 @@ const routes = [
         name: 'NuevoUsuario',
         component: () => import(/* webpackChunkName: "login" */ '../views/Usuarios/NuevoUsuario.vue'),
         meta: {value: 'Nuevo Usuario'}
+      },
+      {
+        path: '/TablaUsuario',
+        name: 'TablaUsuario',
+        component: () => import(/* webpackChunkName: "pagos" */ '../views/Usuarios/TablaUsuario.vue'),
+        meta: {value: 'Tabla de Usuarios'}
       }
-    
     ]
   } 
+ 
 ]
 
 const router = createRouter({
