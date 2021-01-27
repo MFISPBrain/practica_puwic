@@ -33,9 +33,16 @@ const routes = [
           }
         ]
       },
-      
+      {
+        path: '/nuevoUsuario',
+        
+        name: 'NuevoUsuario',
+        component: () => import(/* webpackChunkName: "login" */ '../views/Usuarios/NuevoUsuario.vue'),
+        meta: {value: 'Nuevo Usuario'}
+      }
+    
     ]
-  },
+  } 
 ]
 
 const router = createRouter({

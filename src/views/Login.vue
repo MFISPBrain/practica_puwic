@@ -5,7 +5,7 @@
         </div>
         <div class="field  has-addons has-addons-centered " >
     
-          <div class="control">
+          <div class="control ">
 
                     <p class="button ">
             
