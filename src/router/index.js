@@ -31,11 +31,19 @@ const routes = [
             component: () => import(/* webpackChunkName: "pagos" */ '../views/CargarPagos.vue'),
             meta: {value: 'Cargar Pagos'}
           }
-        ]
+        ],
+        
       },
+      {
+        path: '/TablaUsuario',
+        name: 'TablaUsuario',
+        component: () => import(/* webpackChunkName: "pagos" */ '../views/Usuarios/TablaUsuario.vue'),
+        meta: {value: 'Tabla de Usuarios'}
+      }
       
     ]
   },
+  
 ]
 
 const router = createRouter({
