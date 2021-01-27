@@ -1,18 +1,35 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div class="columns has-background-white-ter" style="height: 700px">
+
+        <Menu/>
+        <div class="column pl-0">
+
+            <Navbar/>
+
+            <Breadcrums/>
+
+            <router-view></router-view>
+        </div>
+    </div>
+    
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Menu from '../components/Menu'
+import Navbar from '../components/Navbar'
+import Breadcrums from '../components/Breadcrums'
 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
+    components: {
+        Menu,
+        Navbar,
+        Breadcrums
+    }
 }
 </script>
+
+<style scoped>
+.texto:hover{
+    background-color: #C6C3C2;
+}
+</style>
